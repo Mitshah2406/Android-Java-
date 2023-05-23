@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t1"
+        android:textSize="20dp"
+        android:text="First Number"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/num1"
+        android:layout_below="@+id/t1"
+        android:hint="Enter Number 1"/>
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t2"
+    android:layout_below="@+id/num1"
+        android:textSize="20dp"
+        android:text="Second Number"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/num2"
+        android:layout_below="@+id/t2"
+        android:hint="Enter Number 2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add"
+        android:text="add"
+        android:layout_below="@id/num2"
+        />
+          <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sub"
+        android:text="sub"
+              android:layout_toRightOf="@+id/add"
+        android:layout_below="@id/num2"
+        />
+          <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mul"
+        android:text="mul"
+              android:layout_toRightOf="@+id/sub"
+
+              android:layout_below="@id/num2"
+        />
+          <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/div"
+        android:text="div"
+              android:layout_toRightOf="@+id/mul"
+
+              android:layout_below="@id/num2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/res"
+        android:layout_below="@+id/add"
+        />
+
+</RelativeLayout>
